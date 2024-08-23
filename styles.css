@@ -56,6 +56,10 @@ li.nav-item:hover{
     justify-content: end;
 }
 
+#L{
+    display: none;
+}
+
 #nosotros{
     display: flex;
     flex-direction: row;
@@ -95,6 +99,7 @@ li.nav-item:hover{
     margin: 20px;
     margin-top: 50px;
     box-shadow: 0 0 30px rgba(4, 88, 157, 0.6);
+    width: 24rem;
 }
 
 .card:hover{
@@ -415,5 +420,28 @@ form .btn:hover{
     iframe{
         height: 20rem;
         width: 20rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .card{
+        width: 14rem;
+    }
+
+    #Lab{
+        display: none;
+    }
+
+    #L{
+        display: block;
+    }
+
+    iframe{
+        height: 20rem;
+        width: 15rem;
+    }
+
+    form{
+        width: 15rem;
     }
 }
